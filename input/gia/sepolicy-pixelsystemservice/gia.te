@@ -1,8 +1,0 @@
-# SEPolicies to be configured only if and only if Pixel System Service exists on the device
-
-# allow pixelsystemservice_app to communicate with gia
-binder_use(pixelsystemservice_app)
-hal_client_domain(pixelsystemservice_app, hal_gia)
-
-# allow gia to execute callback for pixelsystemservice_app
-binder_call(gia, pixelsystemservice_app)

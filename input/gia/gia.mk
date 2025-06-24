@@ -2,11 +2,6 @@
 ifeq (,$(filter aosp_%, $(TARGET_PRODUCT)))
 	BOARD_VENDOR_SEPOLICY_DIRS += device/google/gs-common/input/gia/sepolicy
 
-	# When not factory target
-	ifeq (,$(filter factory_%, $(TARGET_PRODUCT)))
-		BOARD_VENDOR_SEPOLICY_DIRS += device/google/gs-common/input/gia/sepolicy-pixelsystemservice
-	endif
-
 	PRODUCT_PACKAGES += gia
 	PRODUCT_PACKAGES += com.google.input.gia.giaservicemanager
 
