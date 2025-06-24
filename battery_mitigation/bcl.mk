@@ -2,10 +2,8 @@ ifeq (,$(filter factory_%,$(TARGET_PRODUCT)))
 PRODUCT_PACKAGES += battery_mitigation
 endif
 
-ifeq ($(RELEASE_PIXEL_AIDL_BATTERY_MITIGATION_HAL), true)
 PRODUCT_PROPERTY_OVERRIDES += \
        vendor.battery_mitigation.aidl.enable=true
-endif
 
 PRODUCT_SOONG_NAMESPACES += device/google/gs-common/battery_mitigation
 PRODUCT_PACKAGES += vendor.google.battery_mitigation-default
