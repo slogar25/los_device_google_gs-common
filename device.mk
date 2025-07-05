@@ -33,3 +33,9 @@ PRODUCT_COPY_FILES += \
 
 DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += \
 	device/google/gs-common/vintf/framework_compatibility_matrix.xml
+
+DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += device/google/gs-common/proprietary/com.google.flood.xml
+
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+	device/google/gs-common/proprietary/com.google.android.imageprocessing.hal.xml
+
